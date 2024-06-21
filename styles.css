@@ -664,6 +664,7 @@ h1,.hero-content p{
     margin: 10px 0;
     border: none;
     padding-left:40px;
+    padding-right: 10px;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -759,6 +760,28 @@ h1,.hero-content p{
     .contact-right-section textarea{
         height: 180px;
     }
+    .contact-left-section{
+   
+        display: none;
+        
+    }
+
+    .contact-right-section{
+   
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.2px);
+        -webkit-backdrop-filter: blur(10.2px);
+        border: 1px solid rgba(255, 255, 255, 0.43);
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding:20px 20px;
+        
+    }
     
 }
 
@@ -795,7 +818,7 @@ footer{
 }
 .footer-links a{
     color: aliceblue;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .divider{
