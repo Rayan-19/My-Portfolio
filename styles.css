@@ -413,7 +413,7 @@ h1,.hero-content p{
 
     padding: 0 30px;
     height: 100%;
-    justify-content:space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 50%;
     position: relative;
@@ -459,12 +459,12 @@ h1,.hero-content p{
 }
 
 .my-pic{
-    width: 100px;
+    width: 170px;
 }
 
 .my-pic img{
     width: 100%;
-    border-radius: 75px;
+    border-radius: 100px;
 }
 
 @media (max-width:768px){
@@ -703,7 +703,7 @@ h1,.hero-content p{
 
 .contact-right-section input{
     border-radius: 16px;
-    height: 30px;
+    height: 40px;
     width: 100%;
     margin: 10px 0;
     border: none;
@@ -732,16 +732,16 @@ h1,.hero-content p{
 .email-icon,.phone-icon,.first{
     position: absolute;
     font-size: 1rem;
-    top:16px;
-    left: 1.5%;
+    top:21.5px;
+    left: 2%;
     color: rgb(255, 255, 255);
 }
 
 .second{
     position: absolute;
     font-size: 1rem;
-    top:16px;
-    left:51.5%;
+    top:21.5px;
+    left:53%;
     color: rgb(255, 255, 255);
 }
 
@@ -750,7 +750,7 @@ h1,.hero-content p{
 .contact-right-section textarea{
     border-radius: 16px;
     width: 100%;
-    height: 200px;
+    height: 155px;
     padding: 20px 30px;
    
     background: rgba(255, 255, 255, 0.3);
@@ -826,6 +826,15 @@ h1,.hero-content p{
         padding:20px 20px;
         
     }
+
+    .contact-right-section input{
+        
+        height: 30px;
+        padding-left:50px;
+        padding-right: 10px;
+      
+    }
+    
     
 }
 
