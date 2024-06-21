@@ -125,14 +125,18 @@ a,i,.menu{
    
 }
 
+/* .nav-links li a:hover{
+    scale: 1.3;
+} */
+
 .nav-links a::after{
     content:attr(data-text);
     pointer-events: none;
     cursor: pointer;
     position: absolute;
     transform: rotate(80deg) scale(1);
-    bottom: 35%;
-    right:20%;
+    bottom: 43%;
+    right:30%;
     color: transparent;
     -webkit-text-stroke: 2px lightcoral;
     opacity: 0;
@@ -150,11 +154,11 @@ a,i,.menu{
 
 .fa-bars{
     color:black;
-    font-size: 1rem;
+    font-size: 1.4rem;
     background: linear-gradient(104.9deg, rgb(255, 95, 162) 2.3%, rgb(254, 201, 154) 92.7%);
     padding: 3px 5px; 
     position: fixed;
-    right: 40px;
+    right: 20px;
     top:20px;
     z-index: 99;
 }
@@ -190,7 +194,7 @@ a,i,.menu{
     .nav-links a::after{
        
         bottom: 43%;
-        right:10%;
+        right:5%;
        
     }
 
@@ -252,8 +256,9 @@ h1,.hero-content p{
 }
 
 .connect-button{
-    box-shadow: 3px 3px 6px  rgb(255, 95, 162),-3px -3px 6px  rgb(254, 201, 154);
+    box-shadow: 1px 1px 6px  rgb(255, 95, 162),-1px -1px 6px  rgb(254, 201, 154);
     cursor: pointer;
+    background-color: rgb(255, 255, 255);
 }
 
 .connect-button:hover{
@@ -387,12 +392,17 @@ h1,.hero-content p{
 .about-me-container h2{
     font-size: 2rem;
     margin: 0 auto;
+    text-align: center;
+    
    
 }
 .about{
     background: linear-gradient(104.9deg, rgb(255, 95, 162) 2.3%, rgb(254, 201, 154) 92.7%);
     padding: 30px 0;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -400,12 +410,11 @@ h1,.hero-content p{
     display: flex;
     flex-direction: column;
     gap:10px;
-    padding: 0 60px;
+    padding: 0 30px;
     height: 80%;
     justify-content:space-around;
     align-items: center;
-    width: 60%;
-    margin: 60px auto;
+    width: 90%;
     position: relative;
    
    
@@ -418,9 +427,11 @@ h1,.hero-content p{
 }
 
 .about-me-container p{
-    text-align:center;
-   
+    text-align: center;
 }
+
+
+
 
 /* ABOUT ME END */
  
@@ -538,7 +549,7 @@ h1,.hero-content p{
     .projects-grid{
         display: grid;
         grid-template-columns: 1fr;
-        width: 60%;  
+        width: 65%;  
     }
 
     
@@ -562,8 +573,8 @@ h1,.hero-content p{
 }
 /* CONTACTS CSS */
 .contacts-container{
-    background-image: url(project-thumnails/bg-purple.jpg);
-    background-position: bottom;
+    background-image: url(project-thumnails/pawel-czerwinski-ZkzobNDayXo-unsplash.jpg);
+    background-position: left;
     height: 100vh;
     align-content: center;
     
@@ -578,7 +589,7 @@ h1,.hero-content p{
    }
 
 .contact-left-section{
-    background-image: url(project-thumnails/bg-purple.jpg);
+   
     background-position: bottom;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -608,6 +619,7 @@ h1,.hero-content p{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .icon-container{
@@ -635,11 +647,17 @@ h1,.hero-content p{
     width: 70%;
     display: flex;
     flex-direction: column;
-    padding:20px;
+    justify-content: space-evenly;
+    padding:20px 20px;
+    
+}
+
+.contact-right-section h2{
+    text-align: center;
 }
 
 
-.contact-right-section input,button{
+.contact-right-section input{
     border-radius: 16px;
     height: 30px;
     width: 100%;
@@ -648,8 +666,17 @@ h1,.hero-content p{
     padding-left:40px;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-   
 }
+
+.contact-right-section button{
+    border-radius: 16px;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+  
+}
+
 .email{
     position: relative;
 }
@@ -661,7 +688,7 @@ h1,.hero-content p{
     position: absolute;
     font-size: 1rem;
     top:16px;
-    left: 3%;
+    left: 1.5%;
     color: rgb(255, 255, 255);
 }
 
@@ -669,7 +696,7 @@ h1,.hero-content p{
     position: absolute;
     font-size: 1rem;
     top:16px;
-    left:53%;
+    left:51.5%;
     color: rgb(255, 255, 255);
 }
 
@@ -712,19 +739,28 @@ h1,.hero-content p{
     color: aliceblue;
 }
 
-/* @media (max-width:1500px){
-    .last{
+@media (max-width:768px){
+    .email-icon,.phone-icon,.first{
         position: absolute;
-        font-size: 30px;
-        top:43px;
-        left: 55%;
+        font-size: 1rem;
+        top:16px;
+        left: 4%;
         color: rgb(255, 255, 255);
-    } 
-
-    .contact-right-section input,button{
-       padding: 0 60px; 
     }
-} */
+    
+    .second{
+        position: absolute;
+        font-size: 1rem;
+        top:16px;
+        left:54%;
+        color: rgb(255, 255, 255);
+    }
+
+    .contact-right-section textarea{
+        height: 180px;
+    }
+    
+}
 
 
 
