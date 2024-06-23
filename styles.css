@@ -147,9 +147,9 @@ a,i,.menu{
     pointer-events: none;
     cursor: pointer;
     position: absolute;
-    transform: rotate(80deg) scale(1);
+    transform: rotate(90deg) scale(1);
     bottom: 38%;
-    right:80px;
+    right:18%;
     font-family: "Playwrite RO", cursive;
     opacity: 0;
     transition: all 0.3s ease;
