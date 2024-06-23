@@ -511,10 +511,23 @@ h1,.hero-content p{
     border-radius: 100px;
 }
 
+@media (min-width:769px) and (max-width:1050px){
+    .my-pic{
+        width: 140px;
+    }
+
+    .about-me-container p{
+        font-size: 0.8rem;
+       
+    }
+    }
+
+
 @media (max-width:768px){
     .about-me-container{
-        height: 65%;
+        height: fit-content;
         width: 75%;
+        padding-bottom: 20px;
     }
 
     .about-me-container{
@@ -535,16 +548,6 @@ h1,.hero-content p{
     }
 }
 
-@media (min-width:769px) and (max-width:1050px){
-    .my-pic{
-        width: 140px;
-    }
-
-    .about-me-container p{
-        font-size: 0.8rem;
-       
-    }
-    }
 
 
 
@@ -654,6 +657,24 @@ h1,.hero-content p{
     padding: 20px 0;
 }
 
+@media (min-width:769px) and (max-width:1050px){
+    .projects-grid{
+       grid-template-columns: 330px 330px ;
+       justify-content: center;  
+       width: 50%;
+    }
+
+    .project-title{
+        font-size: 1.5rem;
+       
+       
+    }
+    .project-detail{
+        font-size: 1rem;
+       
+    }
+    }
+
 @media (max-width:768px){
     .projects-grid{
         display: grid;
@@ -681,23 +702,7 @@ h1,.hero-content p{
     }
 }
 
-@media (min-width:769px) and (max-width:1050px){
-    .projects-grid{
-       grid-template-columns: 330px 330px ;
-       justify-content: center;  
-       width: 50%;
-    }
 
-    .project-title{
-        font-size: 1.5rem;
-       
-       
-    }
-    .project-detail{
-        font-size: 1rem;
-       
-    }
-    }
     
 
 
@@ -829,7 +834,7 @@ h1,.hero-content p{
 .contact-right-section textarea{
     border-radius: 16px;
     width: 100%;
-    height: 155px;
+    height: 140px;
     padding: 20px 30px;
    
 }
@@ -867,6 +872,12 @@ h1,.hero-content p{
   opacity: 0.5;
 }
 
+@media (min-width:769px) and (max-width:1050px){
+    .contact-right-section textarea{
+        height: 135px;
+    }
+    
+}
 
 @media (max-width:768px){
     .email-icon,.phone-icon,.first{
@@ -886,7 +897,7 @@ h1,.hero-content p{
     }
 
     .contact-right-section textarea{
-        height: 180px;
+        height: 160px;
     }
     .contact-left-section{
    
@@ -914,12 +925,7 @@ h1,.hero-content p{
     }
 }
 
-@media (min-width:769px) and (max-width:1050px){
-    .contact-right-section textarea{
-        height: 135px;
-    }
-    
-}
+
 
 
 
